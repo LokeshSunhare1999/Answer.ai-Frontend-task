@@ -1,25 +1,33 @@
-import React from 'react';
-import Start from '../assets/start.svg'
+import React from "react";
+import Start from "../assets/start.svg";
 interface StarRatingProps {
   rating?: number;
   containerStyles?: string;
 }
 
-const StarRating: React.FC<StarRatingProps> = ({ rating = 0, containerStyles = '' }) => {
+const StarRating: React.FC<StarRatingProps> = ({
+  rating = 0,
+  containerStyles = "",
+}) => {
   const MAX_STARS = 5;
   const filledStars = Math.floor(Math.min(Math.max(rating, 0), 5));
-  const remainingStars = MAX_STARS - filledStars;
   let partiallyFilledStar = rating - Math.floor(rating);
 
   const getStar = (offset: number, index: number) => {
     return (
       <div
         key={`${rating}-star-${index}`}
-        className={`w-6 h-6 rounded-sm flex items-center justify-center overflow-hidden ${index < filledStars || (index === filledStars && partiallyFilledStar)
-          ? "bg-[#00b67a]"
-          : "bg-[#c1c1c1]"
-          }`}
-        style={{ clipPath: partiallyFilledStar && index === filledStars ? `inset(0 ${100 - offset * 100}% 0 0)` : 'unset' }}
+        className={`w-6 h-6 rounded-sm flex items-center justify-center overflow-hidden ${
+          index < filledStars || (index === filledStars && partiallyFilledStar)
+            ? "bg-[#00b67a]"
+            : "bg-[#c1c1c1]"
+        }`}
+        style={{
+          clipPath:
+            partiallyFilledStar && index === filledStars
+              ? `inset(0 ${100 - offset * 100}% 0 0)`
+              : "unset",
+        }}
       >
         <svg
           width="12"
@@ -30,7 +38,12 @@ const StarRating: React.FC<StarRatingProps> = ({ rating = 0, containerStyles = '
         >
           <path
             d="M9.29013 0L11.8895 5.26604L17.7023 6.11567L13.4962 10.2124L14.4889 16L9.29013 13.266L4.09139 16L5.08403 10.2124L0.87793 6.11567L6.69076 5.26604L9.29013 0Z"
-            fill={index < filledStars || (index === filledStars && partiallyFilledStar) ? "#ffffff" : "#ffffff"}
+            fill={
+              index < filledStars ||
+              (index === filledStars && partiallyFilledStar)
+                ? "#ffffff"
+                : "#ffffff"
+            }
           />
         </svg>
       </div>
@@ -51,13 +64,11 @@ const StarRating: React.FC<StarRatingProps> = ({ rating = 0, containerStyles = '
 
   return (
     <div className={`items-center  ${containerStyles}`}>
-      <div className='flex items-center'>
-        <img src={Start} alt="Start" width='30' />
+      <div className="flex items-center">
+        <img src={Start} alt="Start" width="30" />
         <span className="text-sm">Trustpilot</span>
       </div>
-      <div className="flex space-x-1">
-        {starsArray}
-      </div>
+      <div className="flex space-x-1">{starsArray}</div>
     </div>
   );
 };

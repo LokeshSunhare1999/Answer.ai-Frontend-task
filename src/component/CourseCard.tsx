@@ -2,7 +2,6 @@ import React from "react";
 
 interface cousreEnum {
   title: string;
-  subtitle: string;
   url: string;
 }
 

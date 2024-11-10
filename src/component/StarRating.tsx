@@ -1,14 +1,16 @@
-import React from 'react';
+import React from "react";
 
 interface StarRatingProps {
   rating?: number;
   containerStyles?: string;
 }
 
-const StarRating: React.FC<StarRatingProps> = ({ rating = 0, containerStyles = '' }) => {
+const StarRating: React.FC<StarRatingProps> = ({
+  rating = 0,
+  containerStyles = "",
+}) => {
   const MAX_STARS = 5;
   const filledStars = Math.floor(Math.min(Math.max(rating, 0), 5));
-  const remainingStars = MAX_STARS - filledStars;
   let partiallyFilledStar = rating - Math.floor(rating);
 
   const getStar = (offset: number, index: number) => {
@@ -55,7 +57,9 @@ const StarRating: React.FC<StarRatingProps> = ({ rating = 0, containerStyles = '
     return getStar(0, index);
   });
 
-  return <div className={`flex h-6 max-w-24 ${containerStyles}`}>{starsArray}</div>;
+  return (
+    <div className={`flex h-6 max-w-24 ${containerStyles}`}>{starsArray}</div>
+  );
 };
 
 export default StarRating;
