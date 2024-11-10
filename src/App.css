@@ -1,0 +1,14 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.rightAlign {
+  text-align: -webkit-right;
+}
+.gelasioFont {
+  font-family: Gelasio;
+}
+.CatamaranFont {
+  font-family: Catamaran;
+}

@@ -1,0 +1,14 @@
+<svg
+  viewBox="0 0 16 16"
+  focusable="false"
+  class="chakra-icon css-1pckyyl"
+  xmlns="http://www.w3.org/2000/svg"
+  fill="currentColor"
+>
+  <!-- Top Line -->
+  <path d="M16 4H0V2H16V4Z" />
+  <!-- Middle Line -->
+  <path d="M16 9H0V7H16V9Z" />
+  <!-- Bottom Line -->
+  <path d="M0 14H16V12H0V14Z" />
+</svg>

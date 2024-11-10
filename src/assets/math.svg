@@ -1,0 +1,10 @@
+<svg
+  viewBox="0 0 24 24"
+  focusable="false"
+  className="chakra-icon css-g7h3az"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path d="M0 9.09L8.34 16.41l7.642-8.34L7.642.75 0 9.09Z" fill="#7491FF" />
+  <path d="M8.327 16.41v7.333h7.655v-7.334H8.327Z" fill="#375CDF" />
+  <path d="M15.981 8.07v8.34H24V8.07h-8.02Z" fill="#213C9D" />
+</svg>
