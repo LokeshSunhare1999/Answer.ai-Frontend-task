@@ -11,13 +11,12 @@ create .env file on top level and past below env variables
 
 ## Features implemented
 - Pixel-perfect recreation of provided Figma screens
-- Interaction states
 - Responsive behavior
-- Typography and spacing accuracy
 - Animation and transition fidelity
 - Authentication flow
+- Sign-up and login functionality with emaila and password
 - Implemented authentication with local storage
-- Pricate and public Routing setup
+- Private and public Routing setup
 - Implemented Form handling
 - Implemented Error handling
 
