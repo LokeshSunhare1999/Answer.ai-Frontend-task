@@ -2,6 +2,11 @@
 
 - run command ```npm install``` to install node module
 - run command ```npm run dev``` to start the project
+
+create .env file on top level and past below env variables
+- VITE_FIREBASE_API_KEY=AIzaSyD06C1Hy2W9GczVqg7Th39mW4dZGaZg2-Y
+- VITE_FIREBASE_AUTH_DOMAIN=brilliant-e58a8.firebaseapp.com
+- FIREBASE_PROJECT_ID=brilliant-e58a8
   
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
